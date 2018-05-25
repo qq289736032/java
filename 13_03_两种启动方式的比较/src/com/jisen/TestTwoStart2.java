@@ -7,12 +7,12 @@ package com.jisen;
  * 但是实现Runnable的子类对象要通过参数传递的方式，进入Thread，利用Thread的实例化对象调用start();
  * 
  */
-class SaleTicket{//一个售票员的父类
+class SaleTicketParent{//一个售票员的父类
 	int id;
 	int age;
 	String name;
 }
-class SaleTicket2 extends SaleTicket implements Runnable{	//写一个子类，这个类实现了Runnable及其run方法，
+class SaleTicket2 extends SaleTicketParent implements Runnable{	//写一个子类，这个类实现了Runnable及其run方法，
 															//另外还继承了售票员的父类，那么它即是售票员的子类，又具备多线程功能
 	private  int ticket=10;
 	public void run() {

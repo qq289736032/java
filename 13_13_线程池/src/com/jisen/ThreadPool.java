@@ -2,7 +2,7 @@ package com.jisen;
 
 import java.util.concurrent.*;
 
-class MyThread1 implements Runnable{
+class MyThread implements Runnable{
 
 	public void run() {
 		for(int i=0;i<10;i++){
@@ -43,7 +43,7 @@ public class ThreadPool {
 //		ExecutorService es=Executors.newCachedThreadPool();//创建一个池子
 		ExecutorService es=Executors.newFixedThreadPool(3);//创建1个池子，池里面只能有3个线程
 		for(int i=0;i<5;i++)//尽管可以提交多个线程，但是线程池只能容纳3个线程
-		es.submit(new MyThread1());
+		es.submit(new MyThread());
 		es.shutdown();//关闭之后不能再进入新线程
 		try {
 			Thread.sleep(10000);
