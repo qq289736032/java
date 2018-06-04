@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="mongo-java-driver-3.7.0-sources" level="project" />
+    <orderEntry type="library" name="mongo-java-driver-3.7.0" level="project" />
   </component>
 </module>
