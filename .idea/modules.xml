@@ -124,7 +124,6 @@
       <module fileurl="file://$PROJECT_DIR$/netty入门/src/com/jisen/IO/IO.iml" filepath="$PROJECT_DIR$/netty入门/src/com/jisen/IO/IO.iml" />
       <module fileurl="file://$PROJECT_DIR$/JAVA并发编程的艺术/JAVA并发编程的艺术.iml" filepath="$PROJECT_DIR$/JAVA并发编程的艺术/JAVA并发编程的艺术.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java虚拟机/Java虚拟机.iml" filepath="$PROJECT_DIR$/Java虚拟机/Java虚拟机.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JAVA并发编程的艺术/src/com/jisen/jisen.iml" filepath="$PROJECT_DIR$/JAVA并发编程的艺术/src/com/jisen/jisen.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty入门/netty入门.iml" filepath="$PROJECT_DIR$/netty入门/netty入门.iml" />
       <module fileurl="file://$PROJECT_DIR$/数组协变/数组协变.iml" filepath="$PROJECT_DIR$/数组协变/数组协变.iml" />
     </modules>
