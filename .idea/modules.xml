@@ -121,7 +121,6 @@
       <module fileurl="file://$PROJECT_DIR$/15_10_UDP原理/15_10_UDP原理.iml" filepath="$PROJECT_DIR$/15_10_UDP原理/15_10_UDP原理.iml" />
       <module fileurl="file://$PROJECT_DIR$/15_12_UDP广播/15_12_UDP广播.iml" filepath="$PROJECT_DIR$/15_12_UDP广播/15_12_UDP广播.iml" />
       <module fileurl="file://$PROJECT_DIR$/Http通讯/Http通讯.iml" filepath="$PROJECT_DIR$/Http通讯/Http通讯.iml" />
-      <module fileurl="file://$PROJECT_DIR$/netty入门/src/com/jisen/IO/IO.iml" filepath="$PROJECT_DIR$/netty入门/src/com/jisen/IO/IO.iml" />
       <module fileurl="file://$PROJECT_DIR$/JAVA并发编程的艺术/JAVA并发编程的艺术.iml" filepath="$PROJECT_DIR$/JAVA并发编程的艺术/JAVA并发编程的艺术.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java虚拟机/Java虚拟机.iml" filepath="$PROJECT_DIR$/Java虚拟机/Java虚拟机.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty入门/netty入门.iml" filepath="$PROJECT_DIR$/netty入门/netty入门.iml" />
