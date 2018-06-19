@@ -9,6 +9,5 @@ public class NIOTimeServer {
         if(args != null && args.length > 0){
             port = Integer.valueOf(port);
         }
-        MultiplexerTimeServer
     }
 }

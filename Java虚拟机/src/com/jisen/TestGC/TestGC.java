@@ -10,8 +10,8 @@ public class TestGC {
     public static void main(String[] args) {
         TestGC objA = new TestGC();
         TestGC objB = new TestGC();
-        //objA.instance = objB;
-        //objB.instance = objA;
+        objA.instance = objB;
+        objB.instance = objA;
         objA = null;
         objB = null;
         System.gc();

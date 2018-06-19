@@ -6,7 +6,7 @@ package com.jisen.nio;
  */
 public class Testnetty {
     /**
-     * NIO即new io
+     * NIO即Non-block io
      * 普通的IO是面向流,阻塞IO,
      * NIO是面向缓冲,非阻塞IO
      * Java IO面向流意味着每次从流中读取一个或者多个字节,直至读取所有字节,他们没有被缓存在任何地方,.此外它不能移动流中的数据.如果需要前后移动从流中读取的数据,需要先将它缓存到一个缓冲区
