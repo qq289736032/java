@@ -1,0 +1,38 @@
+游戏逻辑部分:
+    搭建一个mavenweb项目,实际上游戏的服务器通信可以不必用tomcat作为容器,这里便于开发中打包编译以及发布
+    核心目录:
+        (1) core: 核心部分
+        (2) mananger:逻辑模块
+        (3) net:网络通信部分
+        (4) task: 定时任务
+        (5) template: 静态数据.
+        (6) util: 工具类
+    模块介绍:
+        core:游戏的核心处理包,包括游戏启动,关闭以及玩家请求接入等.
+            GameInit:游戏服务器启动类,负责服务器资源的加载与释放
+            Router:处理玩家请求的逻辑处理消息分发.
+        manager:逻辑模块
+            event包:时间处理模块
+            module:逻辑模块.
+        net:网络模块,网络请求处理模块
+            rpc:负责逻辑服务器与其他服务器的远程服务调用,
+            NetFramework:模拟网络层框架,负责网络请求响应封装
+            NetHandler: 模拟网络框架处理接口,负责处理网络框架的逻辑
+            NetHandlerImpl:模拟网框架处理接口的实现类
+            NetModule 模拟网络层框架封装,负责封装网络框架
+            ProtoIds:网络请求协议号,客户端与服务器交互的协议号
+            ProtoMassage:网络请求消息体,客户端与服务器交互的消息结构
+            ResultCode:网络响应码,客户端与服务器交互结构的响应码封装.
+            net.properties:网络配置IP端口文件
+        task:模块
+            JobMgr:job管理类
+            QuartzManager:Quartz管理类
+            testJob:测试job类
+        template:静态数据
+            DataLoader:游戏服务器数据载入类
+        Util:
+            CacheUtil:缓存管理类
+            DBUtil:数据库管理类
+            ExecutorPool:线程池管理类.
+
+
