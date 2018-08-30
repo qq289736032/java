@@ -12,7 +12,7 @@ import java.util.Set;
 /**
  * Created by jisen on 2018/2/5.
  */
-public class NIOClient {
+public class NIOClient3 {
 
     /*标识数字*/
     private static int flag = 0;
@@ -24,19 +24,16 @@ public class NIOClient {
     private static ByteBuffer receivebuffer = ByteBuffer.allocate(BLOCK);
     /*服务器端地址*/
     private final static InetSocketAddress SERVER_ADDRESS = new InetSocketAddress(
-            "localhost", 8888);
+            "localhost", 1111);
 
     public static void main(String[] args) throws IOException {
         // TODO Auto-generated method stub
-
-        // 打开选择器
-        Selector selector = Selector.open();
-
-        // 打开socket通道,
+        // 打开socket通道
         SocketChannel socketChannel = SocketChannel.open();
         // 设置为非阻塞方式
         socketChannel.configureBlocking(false);
-
+        // 打开选择器
+        Selector selector = Selector.open();
         // 注册连接服务端socket动作
         socketChannel.register(selector, SelectionKey.OP_CONNECT);
         // 连接

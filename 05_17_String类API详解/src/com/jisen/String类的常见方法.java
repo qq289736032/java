@@ -22,6 +22,9 @@ public class String类的常见方法 {
 		//c语言有三种输出方式 printf直接输出的终端， sprintf直接输出到字符串， fprintf直接输出到文件 
 		String ss=String.format("我是%s，我今年%d岁","zs", 20);
 		System.out.println(ss);
+
+		String str = "abc 123";
+
 	}
 
 }

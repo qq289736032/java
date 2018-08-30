@@ -10,9 +10,9 @@ import java.net.Socket;
 /**
  * Created by jisen on 2018/2/26.
  */
-public class TimeClient {
+public class TimeClient3 {
     public static void main(String[] args) {
-        int port = 8888;
+        int port = 8080;
         if(args != null && args.length > 0){
             try{
 
@@ -28,16 +28,20 @@ public class TimeClient {
             ia = InetAddress.getLocalHost();
             String localhost = ia.getHostAddress();
             System.out.println(localhost);
+            //对面的ip和port,发起连接
             socket = new Socket(localhost,port);
 
-            //获取输出流写入数据
+            //连接之后反馈,获取输出流将消息返回去
             out = new PrintWriter(socket.getOutputStream(),true);
-            out.println("QUERY TIME ORDER, I am client1");
+            out.println("QUERY TIME ORDER,I am TimeClient3");
             System.out.println("Send order 2 server succeed.");
 
-            //输入流,读取服务端的消息
+            //获取输入流,我们客户端从输入流获取数据
             in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+
+            //读取的时候阻塞,直到它有消息读取
             String resp = in.readLine();
+
             System.out.println("isRead?");
             System.out.println("Now is : " + resp);
         } catch (Exception e) {

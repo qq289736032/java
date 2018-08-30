@@ -1,8 +1,10 @@
-package com.jisen.IO.TimeServer;
+package com.jisen.IO.伪异步IO2;
 
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * Created by jisen on 2018/2/26.
@@ -15,14 +17,13 @@ public class TimeServer {
         }
         ServerSocket server = null;
         try {
-
             server = new ServerSocket(port);
             System.out.println("The time server is start in port :"+port);
             Socket socket = null;
+            ExecutorService executorService = Executors.newFixedThreadPool(5);
             while(true){
                 socket = server.accept();
-                System.out.println("接收了请求");
-                new Thread(new TimeServerHandler(socket)).start();
+                executorService.execute(new TimeServerHandler(socket));
             }
         } catch (Exception e) {
             e.printStackTrace();
