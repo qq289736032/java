@@ -1,8 +1,0 @@
-伪异步模型:
-当有新的客户端接入时,将客户端的socket封装成一个Task(该任务实现Runnable接口)投递到后端的线程池中进行处理,
-jdk的线程池维护一个消息队列和N个活跃线程,对消息队列中的任务进行处理.由于线程池可以设置消息队列的大小和最大的线程数,因此它的资源占用是可控的.
-
-弊端:
-io的read  This method blocks untils input data is available,end of file is detected, or an exception is thrown
-当对socket的输入流进行读取操作时它会一直阻塞下去直到,有数据可读,或者数据已经读完,或者发生io异常,(阻塞即线程暂停)
-这表示当对方发送请求或者应答消息比较缓慢时,速去输入流乙方的通信线程将会被长时间阻塞.
