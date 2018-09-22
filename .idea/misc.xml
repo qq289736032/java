@@ -5,6 +5,8 @@
       <list>
         <option value="$PROJECT_DIR$/websocket/pom.xml" />
         <option value="$PROJECT_DIR$/websocketchat/pom.xml" />
+        <option value="$PROJECT_DIR$/netty入门/pom.xml" />
+        <option value="$PROJECT_DIR$/Java虚拟机/pom.xml" />
       </list>
     </option>
   </component>
