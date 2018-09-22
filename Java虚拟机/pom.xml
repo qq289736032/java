@@ -7,6 +7,15 @@
     <groupId>com.jisen</groupId>
     <artifactId>Java虚拟机</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/cglib/cglib -->
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>3.2.7</version>
+        </dependency>
+    </dependencies>
+
 
     
 </project>
