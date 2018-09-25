@@ -1,6 +1,6 @@
 package com.jisen;
 
-class Student{
+class Student1{
 	String name;
 	int age;
 	void talk(){

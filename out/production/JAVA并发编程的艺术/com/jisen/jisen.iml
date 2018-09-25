@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/优先级的阻塞队列" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/对象成员变量的线程安全" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/并发与串行的比较" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/演示死锁" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/阻塞双端队列" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -17,9 +17,9 @@ import java.util.Map;
  */
 public class Httpclient {
     public static void main(String[] args) throws SQLException, ClassNotFoundException, IOException {
-        String dataByJDBC = getDataByJDBC();
+       // String dataByJDBC = getDataByJDBC();
         //如果不从数据库取直接发送字符串
-        //dataByJDBC="hello httpserver"
+        String dataByJDBC="hello httpserver";
         String backData = httpPost(dataByJDBC);
 
         System.out.println(backData);
