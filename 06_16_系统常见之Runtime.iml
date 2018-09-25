@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/06_16_系统常见之Runtime/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/06_16_系统常见之Runtime">
+      <sourceFolder url="file://$MODULE_DIR$/06_16_系统常见之Runtime/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="inheritedJdk" />
+  </component>
+</module>

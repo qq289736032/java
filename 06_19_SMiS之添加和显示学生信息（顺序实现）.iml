@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/06_19_SMiS之添加和显示学生信息（顺序实现）/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/06_19_SMiS之添加和显示学生信息（顺序实现）">
+      <sourceFolder url="file://$MODULE_DIR$/06_19_SMiS之添加和显示学生信息（顺序实现）/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="inheritedJdk" />
+  </component>
+</module>

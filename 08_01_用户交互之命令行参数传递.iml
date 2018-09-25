@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/08_01_用户交互之命令行参数传递/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/08_01_用户交互之命令行参数传递">
+      <sourceFolder url="file://$MODULE_DIR$/08_01_用户交互之命令行参数传递/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="inheritedJdk" />
+  </component>
+</module>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/06_13_内部类/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/06_13_内部类">
+      <sourceFolder url="file://$MODULE_DIR$/06_13_内部类/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="module" module-name="05_17_String类API详解" />
+  </component>
+</module>
