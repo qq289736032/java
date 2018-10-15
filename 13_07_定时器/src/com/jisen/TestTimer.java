@@ -31,10 +31,17 @@ package com.jisen;
 
 import java.util.*;
 class MyTask2 extends TimerTask{
+	private Timer t;
+	public MyTask2(Timer t){
+		this.t =t;
+	}
 	@Override
 	public void run() {
-		cancel();//结束后还会把整个线程运行完,这里表示该任务的结束但是 计时器schedule依然没有结束
+
+		//cancel();//结束后还会把整个线程运行完,这里表示该任务的结束但是 计时器schedule依然没有结束
+		System.out.println(Thread.currentThread().getName());
 		System.out.println("baba~");
+		t.cancel();
 	}
 }
 
@@ -50,6 +57,7 @@ class MyTask1 extends TimerTask{
 //			}
 //		}
 //		cancel();//结束后还会把整个线程运行完,这里表示该任务的结束但是 计时器schedule依然没有结束
+		System.out.println(Thread.currentThread().getName());
 		System.out.println("biu~~");
 	}
 }
@@ -60,9 +68,9 @@ public class TestTimer {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Timer t=new Timer();//先产生一个定时器
+		Timer t=new Timer(false);//先产生一个定时器,如果把他变成main的守护线程那么,main执行完之后就结束了
 		MyTask1 mt1=new MyTask1();
-		MyTask2 mt2=new MyTask2();
+		MyTask2 mt2=new MyTask2(t);
 		//schedule(TimerTask task, Date time),参数1，要执行的任务。参数2，多少毫秒后执行该任务
 		//schedule(TimerTask task, Date firstTime, long period) 参数1，任务；参数2，第一次执行时，多少秒后执行该任务；参数3，第二次以后，该任务重复执行的时间
 		//schedule(TimerTask task, long delay, long period) 
@@ -70,6 +78,7 @@ public class TestTimer {
 		t.schedule(mt2, 5000,1000);
 		//t.scheduleAtFixedRate(mt2, 5000, 1000);//这个不知道有什么区别
 		System.out.println("结束吗");
-		//t.cancel();//这里表示计时器的结束
+		//t.cancel();//这里表示计时器的结束,time线程结束
+		System.out.println(Thread.currentThread().getName());
 	}
 }
