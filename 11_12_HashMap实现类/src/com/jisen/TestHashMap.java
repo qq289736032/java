@@ -2,9 +2,12 @@ package com.jisen;
 
 //Map的本质是有很多个entry组成的Set集合
 
-import java.util.*;
-
 import com.jisen.student.Student;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
 
 public class TestHashMap {
 
@@ -35,6 +38,9 @@ public class TestHashMap {
 //			 System.out.println(it.next().getKey()+it.next().getValue());//这里已经可以遍历整个set数据了
 			 System.out.println(mess.getKey()+"\t\t"+mess.getValue());
 		 }
+
+
 	}
+
 
 }
