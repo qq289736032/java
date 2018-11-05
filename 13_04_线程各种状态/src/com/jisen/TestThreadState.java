@@ -18,8 +18,8 @@ public class TestThreadState {
 	 *
 	 */
 	public static void main(String[] args) {
-		Thread th = new Thread();
-		th.start();
+
+
 	}
 
 }

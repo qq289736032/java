@@ -15,9 +15,7 @@ public class DiscardServerHandler extends ChannelHandlerAdapter {
     /*
         2.这里我们覆盖了 chanelRead() 事件处理方法。每当从客户端收到新的数据时，这个方法会在收到消息时被调用，这个例子中，收到的消息的类型是 ByteBuf
      */
-    @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        super.channelRead(ctx, msg);
         try {
             ByteBuf in = (ByteBuf) msg;
         }finally {

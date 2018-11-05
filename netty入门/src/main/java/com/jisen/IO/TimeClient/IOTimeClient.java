@@ -10,7 +10,7 @@ import java.net.Socket;
 /**
  * Created by jisen on 2018/2/26.
  */
-public class TimeClient {
+public class IOTimeClient {
     public static void main(String[] args) {
         int port = 8888;
         if(args != null && args.length > 0){
